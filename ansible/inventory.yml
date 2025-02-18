@@ -42,12 +42,14 @@ all:
       wireguard_ip: 192.168.0.1
       gpu_enabled: false
       is_primary: true
+      ansible_port: 2222
 
     # These are the GPU nodes, which actually run the chutes.
     chutes-miner-gpu-0:
       ansible_host: 1.0.0.1
       external_ip: 1.0.0.1
       wireguard_ip: 192.168.0.3
+      ansible_port: 2222
     chutes-miner-gpu-1:
       ansible_host: 1.0.0.2
       external_ip: 1.0.0.2
